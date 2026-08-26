@@ -543,8 +543,24 @@ button {
 
 .project-image {
   min-height: 230px;
+  overflow: hidden;
 }
 
+.project-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 230px;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.04);
+}
 
 .project-placeholder {
   display: flex;
